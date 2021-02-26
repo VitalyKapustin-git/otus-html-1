@@ -1,0 +1,75 @@
+body {
+  padding: 0.5rem;
+}
+
+ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+}
+
+.header-content-logo {
+  font-weight: 800;
+  font-size: large;
+  color: blue;
+  text-decoration: none;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  border: 2px solid blue;
+}
+
+.main-content {
+  border: 2px solid yellow;
+  margin: 0.5rem 0;
+}
+
+.main-content-el {
+  background-color: gainsboro;
+}
+
+.main-content aside,
+.main-content article {
+  padding: 0.5rem 0;
+}
+
+.main-content aside {
+  width: 19.99%;
+}
+
+.main-content-aside-left div {
+  margin-bottom: 0.5rem;
+}
+
+.main-content-article {
+  width: 59.99%;
+  margin: 0 0.5rem;
+}
+
+.main-content-article section {
+  margin-top: 0.5rem;
+  background-color: orange;
+}
+
+.footer-content {
+  border: 2px solid green;
+}
+
+.footer-content div {
+  width: 24.99%;
+  padding: 0 0.5rem 0.5rem;
+}
+
+.main-content,
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
