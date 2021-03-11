@@ -1,9 +1,13 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   padding: 0.5rem;
 }
 
 ul {
-  display: inline-block;
   list-style: none;
   padding: 0;
 }
@@ -12,11 +16,21 @@ ul li {
   display: inline;
 }
 
-.header-content-logo {
-  font-weight: 800;
-  font-size: large;
+ul li a {
   color: blue;
   text-decoration: none;
+}
+
+ul li a:hover {
+  font-weight: 800;
+  color: blueviolet;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
 }
 
 .header-content {
@@ -27,36 +41,48 @@ ul li {
   border: 2px solid blue;
 }
 
-.main-content {
-  border: 2px solid yellow;
-  margin: 0.5rem 0;
+.header-content-logo {
+  font-weight: 800;
+  font-size: large;
+  color: blue;
+  text-decoration: none;
 }
 
-.main-content-el {
+.site-content {
+  border: 2px solid yellow;
+  margin: 0.5rem 0;
+  flex: 1 0 auto;
+  min-height: 100%;
+}
+
+.site-content-el {
   background-color: gainsboro;
 }
 
-.main-content aside,
-.main-content article {
-  padding: 0.5rem 0;
+.site-content aside,
+.site-content article {
+  padding: 0.5rem 0.5rem;
 }
 
-.main-content aside {
+.site-content aside {
   width: 19.99%;
 }
 
-.main-content-aside-left div {
+.site-content-aside-left div {
   margin-bottom: 0.5rem;
 }
 
-.main-content-article {
+.site-content-main {
   width: 59.99%;
   margin: 0 0.5rem;
+  min-height: 100%;
+  background-color: gainsboro;
 }
 
-.main-content-article section {
+.site-content-article section {
   margin-top: 0.5rem;
   background-color: orange;
+  padding: 0.5rem;
 }
 
 .footer-content {
@@ -68,8 +94,9 @@ ul li {
   padding: 0 0.5rem 0.5rem;
 }
 
-.main-content,
+.site-content,
 .footer-content {
   display: flex;
   justify-content: space-around;
+  align-items: stretch;
 }
